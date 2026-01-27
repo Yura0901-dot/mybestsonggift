@@ -1,0 +1,19 @@
+{
+    "Home": {
+        "customers": "clientes felices",
+        "title1": "Regala emociones",
+        "title2": "que perdurarán",
+        "title3": "para siempre",
+        "desc": "Una canción personalizada es un regalo único para una boda, cumpleaños o aniversario. Convertiremos tu historia en un verdadero éxito.",
+        "order": "Pedir una canción",
+        "listen": "Escuchar ejemplos",
+        "reviews": "basado en reseñas reales"
+    },
+    "Header": {
+        "about-us": "Sobre nosotros",
+        "howWork": "Cómo funciona",
+        "FAQ": "Preguntas frecuentes",
+        "order": "Pedir canción",
+        "language": "Idioma"
+    }
+}

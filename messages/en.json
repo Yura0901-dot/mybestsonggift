@@ -1,0 +1,19 @@
+{
+    "Home": {
+        "customers": "happy customers",
+        "title1": "Give emotions",
+        "title2": "which will remain",
+        "title3": "forever",
+        "desc": "A personalized song is a unique gift for a wedding, birthday or anniversary. We will turn your story into a real hit.",
+        "order": "Order a song",
+        "listen": "Listen to examples",
+        "reviews": "based on real reviews"
+    },
+    "Header": {
+        "about-us": "About-us",
+        "howWork": "How it works",
+        "FAQ": "FAQ",
+        "order": "Order song",
+        "language": "Language"
+    }
+}
