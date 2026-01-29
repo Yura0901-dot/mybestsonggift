@@ -1,7 +1,12 @@
 import Link from "next/link"
 import { Music } from "lucide-react"
+import cn from "clsx"
 
-const Logo = () => {
+interface LogoProps {
+  color?: 'white' | 'black'
+}
+
+const Logo = ({ color = 'black'}: LogoProps) => {
     return (
         <Link href='/' className="flex items-center gap-2 group">
             <div className="relative w-10 h-10 overflow-hidden rounded-lg">
@@ -9,8 +14,8 @@ const Logo = () => {
                     <Music className="w-6 h-6" />
                 </div>
             </div>
-            <span className="font-serif text-2xl font-bold text-[#2D2A26] tracking-tight">
-              SongTo<span className="text-[#D4AF37]">Gift</span>
+            <span className={cn("font-serif text-2xl font-bold tracking-tight", color === 'white' ? 'text-white' : 'text-[#2D2A26]')}>
+              MyBestSong<span className="text-[#D4AF37]">Gift</span>
             </span>
         </Link>
     )

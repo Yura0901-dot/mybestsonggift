@@ -1,13 +1,74 @@
 {
     "Home": {
-        "customers": "happy customers",
-        "title1": "Give emotions",
-        "title2": "which will remain",
-        "title3": "forever",
-        "desc": "A personalized song is a unique gift for a wedding, birthday or anniversary. We will turn your story into a real hit.",
-        "order": "Order a song",
-        "listen": "Listen to examples",
-        "reviews": "based on real reviews"
+        "hero": {
+            "customers": "happy customers",
+            "title1": "Give emotions",
+            "title2": "which will remain",
+            "title3": "forever",
+            "desc": "A personalized song is a unique gift for a wedding, birthday or anniversary. We will turn your story into a real hit.",
+            "order": "Order a song",
+            "listen": "Listen to examples",
+            "reviews": "based on real reviews"
+        },
+        "review": {
+            "title1": "Stories that",
+            "title2": "matter",
+            "desc": "Join 100+ happy customers who turned their memories into music."
+        },
+        "aboutPrice": {
+          "badge": "Professional Studio Quality",
+          "titleMain": "A gift that lasts",
+          "titleForever": "forever.",
+          "description": "Flowers die in a week. Dinner lasts an hour. But a song creates a memory that lives on repeat. Usually, a custom studio track costs $300+, but we've optimized the process to make professional music accessible to everyone.",
+          "features": {
+            "vocals": "Professional Vocals & Mixing",
+            "delivery": "Fast 3-5 Day Delivery",
+            "ownership": "You Own the Song (Personal Use)"
+          },
+          "card": {
+            "popularTag": "Most Popular Choice",
+            "flatRate": "Flat Rate",
+            "price": "59",
+            "noFees": "No hidden fees. One-time payment.",
+            "lyrics": "Lyrics writing",
+            "recording": "Studio recording",
+            "artistFee": "Artist fee",
+            "included": "Included",
+            "button": "Start My Song",
+            "guarantee": "100% Satisfaction Guarantee"
+          }
+        },
+        "steps": {
+          "subtitle": "How It Works",
+          "title1": "From memory to",
+          "title2": "melody",
+          "title3": "in 3 steps",
+          "step1_title": "1. Tell Us Your Story",
+          "step1_desc": "Fill out a quick form. Share names, memories, inside jokes, and the mood you want. It takes 5 minutes.",
+          "step2_title": "2. Secure Payment",
+          "step2_desc": "Complete your order with a flat fee of $59. No hidden costs. We accept Apple Pay, PayPal, and cards.",
+          "step3_title": "3. Get Your Hit",
+          "step3_desc": "In 3-5 days, receive your custom studio-quality song in your email. Get tissues ready for the reaction!",
+          "cta": "Create My Song Now",
+          "note": "No musical knowledge required."
+        },
+        "FAQ": {
+          "subtitle": "Common Questions",
+          "title_part1": "Everything you need to",
+          "title_part2": "know",
+          "footer_text": "Still have questions?",
+          "footer_link": "Chat with email support.",
+          "q1_question": "Can I choose the genre and mood?",
+          "q1_answer": "Absolutely! Whether you want a tear-jerking acoustic ballad, an upbeat pop hit, or a classic country song, you call the shots. You'll select your preferred style in the order form.",
+          "q2_question": "How long does it take to get my song?",
+          "q2_answer": "Our standard delivery time is 3-5 days.",
+          "q3_question": "What exactly do I receive?",
+          "q3_answer": "You will receive a high-quality studio MP3 file of your custom song, ready to be played on any device.",
+          "q4_question": "Is it really only $59? Are there hidden fees?",
+          "q4_answer": "Yes, it is a one-time flat fee of $59. You get full ownership of the song for personal use. No subscriptions, no royalties, no hidden costs.",
+          "q5_question": "What if I don't like the song?",
+          "q5_answer": "Your satisfaction is our priority. If there is a mistake in the lyrics or names, we will fix it for free. We strive to make every song a hit that you'll cherish forever."
+        }
     },
     "Header": {
         "about-us": "About-us",
@@ -15,5 +76,17 @@
         "FAQ": "FAQ",
         "order": "Order song",
         "language": "Language"
+    },
+    "Footer": {
+      "brand_desc": "We turn your favorite memories into custom studio-quality songs. The perfect gift for weddings, anniversaries, and birthdays.",
+      "col_company": "Company",
+      "link_about": "About Us",
+      "link_how": "How it Works",
+      "col_legal": "Legal",
+      "link_privacy": "Privacy Policy",
+      "link_terms": "Terms of Service",
+      "col_payment": "Secure Payment",
+      "payment_desc": "We accept all major credit cards and PayPal.",
+      "copyright": "All rights reserved."
     }
 }

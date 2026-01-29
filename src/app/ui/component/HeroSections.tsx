@@ -1,36 +1,23 @@
 'use client'
 
 import Link from "next/link"
-import { Play, Star, Music } from "lucide-react"
+import { Play, Star } from "lucide-react"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 
-const FloatingNote = ({ delay, x, size }: { delay: number, x: string, size: number }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 100 }}
-    animate={{ 
-      opacity: [0, 0.4, 0], 
-      y: -500,
-      x: Math.random() > 0.5 ? 50 : -50
-    }}
-    transition={{ 
-      duration: 10, 
-      delay: delay, 
-      repeat: Infinity, 
-      ease: "linear" 
-    }}
-    className="absolute bottom-0 text-white/10 pointer-events-none z-10"
-    style={{ left: x }}
-  >
-    <Music size={size} />
-  </motion.div>
-)
-
 const HeroSection = () => {
-  const t = useTranslations('Home')
+  const t = useTranslations('Home.hero')
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const target = document.getElementById('video-reviews');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   return (
-    <section className="relative h-[100vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-vh flex items-center justify-center overflow-hidden py-5">
       
       <div className="absolute inset-0 z-0">
         <video
@@ -45,14 +32,6 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black/40" />
         
         <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-[#FDFBF7] to-transparent" />
-      </div>
-
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-         <FloatingNote delay={0} x="10%" size={24} />
-         <FloatingNote delay={2} x="20%" size={32} />
-         <FloatingNote delay={5} x="85%" size={28} />
-         <FloatingNote delay={7} x="95%" size={40} />
-         <FloatingNote delay={3} x="50%" size={20} />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-20 text-center">
@@ -107,7 +86,8 @@ const HeroSection = () => {
             </Link>
             
             <Link 
-              href="#examples"
+              onClick={handleScroll}
+              href="#video-reviews"
               className="group w-full sm:w-auto px-10 py-5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-full font-medium transition-all hover:bg-white/20 flex items-center justify-center gap-3"
             >
               <div className="w-8 h-8 rounded-full bg-white text-[#2D2A26] flex items-center justify-center group-hover:scale-110 transition-transform">

@@ -1,13 +1,74 @@
 {
     "Home": {
-        "customers": "clientes felices",
-        "title1": "Regala emociones",
-        "title2": "que perdurarán",
-        "title3": "para siempre",
-        "desc": "Una canción personalizada es un regalo único para una boda, cumpleaños o aniversario. Convertiremos tu historia en un verdadero éxito.",
-        "order": "Pedir una canción",
-        "listen": "Escuchar ejemplos",
-        "reviews": "basado en reseñas reales"
+        "hero": {
+            "customers": "clientes felices",
+            "title1": "Regala emociones",
+            "title2": "que perdurarán",
+            "title3": "para siempre",
+            "desc": "Una canción personalizada es un regalo único para una boda, cumpleaños o aniversario. Convertiremos tu historia en un verdadero éxito.",
+            "order": "Pedir una canción",
+            "listen": "Escuchar ejemplos",
+            "reviews": "basado en reseñas reales"
+        },
+        "review": {
+            "title1": "Storie che",
+            "title2": "contano",
+            "desc": "Unisciti a oltre 100 clienti felici che hanno trasformato i loro ricordi in musica."
+        },
+        "aboutPrice": {
+          "badge": "Calidad de Estudio Profesional",
+          "titleMain": "Un regalo que dura",
+          "titleForever": "para siempre.",
+          "description": "Las flores mueren en una semana. Una cena dura una hora. Pero una canción crea un recuerdo que se repite eternamente. Usualmente, una pista de estudio personalizada cuesta más de $300, pero hemos optimizado el proceso para que la música profesional sea accesible para todos.",
+          "features": {
+            "vocals": "Voces y Mezcla Profesionales",
+            "delivery": "Entrega Rápida en 3-5 Días",
+            "ownership": "La Canción es Tuya (Uso Personal)"
+          },
+          "card": {
+            "popularTag": "La Opción Más Popular",
+            "flatRate": "Tarifa Plana",
+            "price": "59",
+            "noFees": "Sin cargos ocultos. Pago único.",
+            "lyrics": "Escritura de letra",
+            "recording": "Grabación de estudio",
+            "artistFee": "Honorarios del artista",
+            "included": "Incluido",
+            "button": "Comenzar Mi Canción",
+            "guarantee": "Garantía de Satisfacción del 100%"
+          }
+        },
+        "steps": {
+          "subtitle": "Cómo funciona",
+          "title1": "De un recuerdo a una",
+          "title2": "melodía",
+          "title3": "en 3 pasos",
+          "step1_title": "1. Cuéntanos tu historia",
+          "step1_desc": "Rellena un formulario rápido. Comparte nombres, recuerdos, bromas internas y el estilo que buscas. Solo toma 5 minutos.",
+          "step2_title": "2. Pago seguro",
+          "step2_desc": "Completa tu pedido con una tarifa única de $59. Sin costos ocultos. Aceptamos Apple Pay, PayPal y tarjetas.",
+          "step3_title": "3. Recibe tu canción",
+          "step3_desc": "En 3-5 días, recibirás tu canción personalizada con calidad de estudio en tu email. ¡Prepara los pañuelos para la reacción!",
+          "cta": "Crear mi canción ahora",
+          "note": "No necesitas saber de música."
+        },
+        "FAQ": {
+          "subtitle": "Preguntas frecuentes",
+          "title_part1": "Todo lo que necesitas",
+          "title_part2": "saber",
+          "footer_text": "¿Tienes más preguntas?",
+          "footer_link": "Escribe a nuestro soporte por email.",
+          "q1_question": "¿Puedo elegir el género y el estilo?",
+          "q1_answer": "¡Por supuesto! Ya sea una balada acústica emotiva, un éxito pop alegre o un clásico country, tú decides. Elegirás tu estilo preferido en el formulario de pedido.",
+          "q2_question": "¿Cuánto tardaré en recibir mi canción?",
+          "q2_answer": "Nuestro tiempo de entrega estándar es de 3-5 días.",
+          "q3_question": "¿Qué recibiré exactamente?",
+          "q3_answer": "Recibirás un archivo MP3 de calidad de estudio de tu canción personalizada, listo para reproducir en cualquier dispositivo.",
+          "q4_question": "¿De verdad cuesta solo $59? ¿Hay tarifas ocultas?",
+          "q4_answer": "Sí, es una tarifa única de $59. Obtienes la propiedad total de la canción para uso personal. Sin suscripciones, sin regalías, sin costos ocultos.",
+          "q5_question": "¿Qué pasa si no me gusta la canción?",
+          "q5_answer": "Tu satisfacción es nuestra prioridad. Si hay un error en la letra o en los nombres, lo arreglaremos gratis. Nos esforzamos para que cada canción sea un éxito que atesorarás para siempre."
+        }
     },
     "Header": {
         "about-us": "Sobre nosotros",
@@ -15,5 +76,17 @@
         "FAQ": "Preguntas frecuentes",
         "order": "Pedir canción",
         "language": "Idioma"
+    },
+    "Footer": {
+      "brand_desc": "Convertimos tus recuerdos favoritos en canciones personalizadas con calidad de estudio. El regalo perfecto para bodas, aniversarios y cumpleaños.",
+      "col_company": "Empresa",
+      "link_about": "Sobre nosotros",
+      "link_how": "Cómo funciona",
+      "col_legal": "Legal",
+      "link_privacy": "Política de Privacidad",
+      "link_terms": "Términos de Servicio",
+      "col_payment": "Pago Seguro",
+      "payment_desc": "Aceptamos las principales tarjetas de crédito y PayPal.",
+      "copyright": "Todos los derechos reservados."
     }
 }
