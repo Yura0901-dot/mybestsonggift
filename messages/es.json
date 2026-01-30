@@ -13,7 +13,7 @@
         "review": {
             "title1": "Storie che",
             "title2": "contano",
-            "desc": "Unisciti a oltre 100 clienti felici che hanno trasformato i loro ricordi in musica."
+            "desc": "Unisciti a oltre 1.000+ clienti felici che hanno trasformato i loro ricordi in musica."
         },
         "aboutPrice": {
           "badge": "Calidad de Estudio Profesional",
@@ -22,7 +22,7 @@
           "description": "Las flores mueren en una semana. Una cena dura una hora. Pero una canción crea un recuerdo que se repite eternamente. Usualmente, una pista de estudio personalizada cuesta más de $300, pero hemos optimizado el proceso para que la música profesional sea accesible para todos.",
           "features": {
             "vocals": "Voces y Mezcla Profesionales",
-            "delivery": "Entrega Rápida en 3-5 Días",
+            "delivery": "Entrega Rápida en 24 Horas",
             "ownership": "La Canción es Tuya (Uso Personal)"
           },
           "card": {
@@ -48,7 +48,7 @@
           "step2_title": "2. Pago seguro",
           "step2_desc": "Completa tu pedido con una tarifa única de $59. Sin costos ocultos. Aceptamos Apple Pay, PayPal y tarjetas.",
           "step3_title": "3. Recibe tu canción",
-          "step3_desc": "En 3-5 días, recibirás tu canción personalizada con calidad de estudio en tu email. ¡Prepara los pañuelos para la reacción!",
+          "step3_desc": "En 24 horas, recibirás tu canción personalizada con calidad de estudio en tu email. ¡Prepara los pañuelos para la reacción!",
           "cta": "Crear mi canción ahora",
           "note": "No necesitas saber de música."
         },
@@ -61,7 +61,7 @@
           "q1_question": "¿Puedo elegir el género y el estilo?",
           "q1_answer": "¡Por supuesto! Ya sea una balada acústica emotiva, un éxito pop alegre o un clásico country, tú decides. Elegirás tu estilo preferido en el formulario de pedido.",
           "q2_question": "¿Cuánto tardaré en recibir mi canción?",
-          "q2_answer": "Nuestro tiempo de entrega estándar es de 3-5 días.",
+          "q2_answer": "Nuestro tiempo de entrega estándar es de 24 horas.",
           "q3_question": "¿Qué recibiré exactamente?",
           "q3_answer": "Recibirás un archivo MP3 de calidad de estudio de tu canción personalizada, listo para reproducir en cualquier dispositivo.",
           "q4_question": "¿De verdad cuesta solo $59? ¿Hay tarifas ocultas?",
@@ -88,5 +88,96 @@
       "col_payment": "Pago Seguro",
       "payment_desc": "Aceptamos las principales tarjetas de crédito y PayPal.",
       "copyright": "Todos los derechos reservados."
+    },
+    "Privacy": {
+      "title": "Política de Privacidad",
+      "last_updated": "Última actualización: {date}",
+      "intro": "En MyBestSongGift, priorizamos su privacidad. Esta política explica cómo recopilamos, usamos y protegemos su información personal.",
+      "sec1_title": "1. Información que recopilamos",
+      "sec1_desc": "Recopilamos información que usted nos proporciona directamente, como cuando realiza un pedido. Esto incluye: Nombre, Correo electrónico, Información de pago (procesada de forma segura) y las historias/detalles que proporciona para la canción.",
+      "sec2_title": "2. Cómo usamos su información",
+      "sec2_desc": "Usamos sus datos para: Procesar y entregar su canción personalizada; Comunicarnos con usted sobre su pedido; Mejorar nuestro sitio web.",
+      "sec3_title": "3. Cookies",
+      "sec3_desc": "Utilizamos cookies para analizar el tráfico del sitio web y mejorar su experiencia.",
+      "sec4_title": "4. Compartir datos",
+      "sec4_desc": "No vendemos sus datos personales. Podemos compartir datos con proveedores de servicios (como Stripe/PayPal) únicamente para procesar su pago.",
+      "contact_title": "Contáctenos",
+      "contact_desc": "Si tiene preguntas, contáctenos en: mybestsonggift@gmail.com"
+    },
+    "Terms": {
+      "title": "Términos de Servicio",
+      "last_updated": "Última actualización: {date}",
+      "intro": "Al acceder a MyBestSongGift, acepta estos Términos. Léalos atentamente.",
+      "sec1_title": "1. Descripción del servicio",
+      "sec1_desc": "Ofrecemos servicios de composición de canciones personalizadas basadas en historias enviadas por el usuario. El producto final es un archivo de audio digital (MP3).",
+      "sec2_title": "2. Pagos y Reembolsos",
+      "sec2_desc": "Todos los precios son en USD. Debido a la naturaleza personalizada del producto, generalmente no ofrecemos reembolsos una vez iniciado el trabajo. Sin embargo, ofrecemos revisiones gratuitas si hay errores fácticos.",
+      "sec3_title": "3. Propiedad Intelectual",
+      "sec3_desc": "Tras el pago completo, se le otorga una licencia perpetua no exclusiva para usar la canción para uso personal. No puede revender la canción.",
+      "sec4_title": "4. Conducta del usuario",
+      "sec4_desc": "Usted acepta no enviar contenido que sea ilegal, odioso o que infrinja los derechos de otros.",
+      "sec5_title": "5. Limitación de responsabilidad",
+      "sec5_desc": "MyBestSongGift no será responsable de ningún daño indirecto derivado del uso de nuestro servicio.",
+      "contact_title": "Contacto",
+      "contact_desc": "Para consultas legales: mybestsonggift@gmail.com"
+    },
+    "About": {
+      "subtitle": "Quiénes somos",
+      "title1": "Convirtiendo momentos en",
+      "title2": "obras maestras",
+      "intro_desc": "En MyBestSongGift, creemos que cada historia de amor, cada cumpleaños y cada hito merece su propia banda sonora.",
+      "story_title": "Nuestra Historia",
+      "story_p1": "Todo comenzó con una simple pregunta: \"¿Cuál es el regalo que dura para siempre?\" Las flores se marchitan, los chocolates se comen y los gadgets pasan de moda. ¿Pero la música? La música viaja directamente al corazón y se queda allí.",
+      "story_p2": "Reunimos a un equipo de músicos y compositores talentosos con un objetivo: hacer que las canciones personalizadas de calidad de estudio sean accesibles para todos, no solo para celebridades.",
+      "story_p3": "Hoy, MyBestSongGift ayuda a miles de personas a expresar sentimientos que las palabras por sí solas no pueden capturar. No solo creamos canciones; creamos máquinas del tiempo que te llevan de vuelta a tus mejores recuerdos.",
+      "quote": "La música es la taquigrafía de la emoción.",
+      "stat1_label": "Canciones Creadas",
+      "stat2_label": "Satisfacción",
+      "stat3_label": "Soporte",
+      "cta_title": "¿Listo para contar tu historia?",
+      "cta_desc": "Crea un regalo que será apreciado toda la vida. Comienza tu canción hoy.",
+      "cta_button": "Crear mi canción"
+    },
+    "HowWork": {
+      "subtitle": "Proceso Simple",
+      "hero_title1": "De tu corazón a",
+      "hero_title2": "sus oídos",
+      "hero_desc": "Crear una canción profesional personalizada parece complicado, pero lo hemos hecho tan fácil como enviar un mensaje de texto.",
+      "step1_title": "Comparte tu historia",
+      "step1_desc": "Todo empieza contigo. Cuéntanos para quién es la canción.",
+      "step1_detail": "Rellena nuestro sencillo formulario. Comparte nombres, recuerdos clave, momentos divertidos y la emoción que deseas transmitir. Elige el género (Pop, Country, Acústico, etc.) y el estilo.",
+      "step2_title": "Creamos magia",
+      "step2_desc": "Nuestros artistas se ponen a trabajar de inmediato.",
+      "step2_detail": "Un compositor profesional escribe la letra basada en tu historia. Luego, un vocalista graba la canción en un estudio con equipo de alta calidad. La mezclamos y masterizamos con estándares de radio.",
+      "step3_title": "Recibe tu canción",
+      "step3_desc": "Revisa tu correo en 24 horas.",
+      "step3_detail": "Recibirás un archivo MP3 de alta calidad directamente en tu correo electrónico. Es tuyo para siempre. Ponla en una fiesta, envíala como regalo o escúchenla juntos.",
+      "feat1_title": "Entrega súper rápida",
+      "feat1_desc": "Sabemos que puedes tener prisa. Por eso entregamos la canción completa en solo 24 horas.",
+      "feat2_title": "Calidad de estudio",
+      "feat2_desc": "Sin voces de IA. Artistas reales, instrumentos reales y mezcla profesional.",
+      "feat3_title": "Es tuya",
+      "feat3_desc": "La canción es tuya. Úsala para videos personales, redes sociales o eventos.",
+      "cta_title": "Comienza tu obra maestra hoy",
+      "cta_btn": "Crear mi canción",
+      "cta_guarantee": "Garantía de satisfacción del 100%"
+    },
+    "NotFound": {
+      "title": "¡Uy! Nota falsa",
+      "desc": "Parece que la pista que buscas aún no se ha grabado. ¿O quizás era una edición limitada?",
+      "button": "Volver al inicio",
+      "vinyl_text": "404 • PÁGINA NO ENCONTRADA • 404 •"
+    },
+    "Success": {
+      "title": "¡Tu canción está en camino!",
+      "subtitle": "Pago exitoso. Hemos comenzado a trabajar en tu éxito.",
+      "step1_title": "Pedido Confirmado",
+      "step1_desc": "Hemos recibido tu historia y los detalles perfectamente.",
+      "step2_title": "Producción Iniciada",
+      "step2_desc": "Nuestros artistas están escribiendo la letra y componiendo la melodía ahora mismo.",
+      "step3_title": "Revisa tu correo",
+      "step3_desc": "En 24 horas, recibirás el archivo MP3 con calidad de estudio en tu bandeja de entrada.",
+      "button": "Volver al inicio",
+      "note": "¿No recibiste el correo de confirmación? Revisa tu carpeta de spam o contáctanos."
     }
 }

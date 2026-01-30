@@ -68,24 +68,26 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center gap-6">
-            <LanguageSwitcher />
+          <div className="flex items-center gap-4 md:gap-6">
+            <div className="flex items-center">
+              <LanguageSwitcher />
+            </div>
             
             <Link
               href='/order'
-              className="relative overflow-hidden bg-[#D4AF37] text-white px-7 py-2.5 rounded-full text-sm font-semibold shadow-md group transition-all hover:shadow-lg hover:-translate-y-0.5"
+              className="hidden md:flex relative overflow-hidden bg-[#D4AF37] text-white px-7 py-2.5 rounded-full text-sm font-semibold shadow-md group transition-all hover:shadow-lg hover:-translate-y-0.5"
             >
               <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
               <span className="relative">{t('order')}</span>
             </Link>
-          </div>
 
-          <button
-            className="md:hidden text-[#2D2A26] p-1 hover:text-[#D4AF37] transition-colors"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
-          </button>
+            <button
+              className="md:hidden text-[#2D2A26] p-1 hover:text-[#D4AF37] transition-colors"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -123,13 +125,6 @@ export function Header() {
               <div className="h-px bg-[#D4AF37]/20 w-full" />
 
               <div className="flex flex-col gap-5">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium text-[#86827E]">{`${t('language')}:`}</span>
-                  <div className="bg-white px-4 py-1.5 rounded-full border border-[#D4AF37]/20 shadow-sm">
-                    <LanguageSwitcher />
-                  </div>
-                </div>
-
                 <Link
                   href='/order'
                   onClick={() => setIsMobileMenuOpen(false)}

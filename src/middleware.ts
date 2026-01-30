@@ -1,26 +1,17 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
-import { getToken } from "next-auth/jwt";
 import { routing } from "./i18n/routing";
 
 const handleI18nRouting = createMiddleware(routing);
 
+const SPANISH_SPEAKING_COUNTRIES = [
+  'AR', 'BO', 'CL', 'CO', 'CR', 'CU', 'DO', 'EC', 'SV', 'GT', 
+  'HN', 'MX', 'NI', 'PA', 'PY', 'PE', 'ES', 'UY', 'VE'
+];
+
 export async function middleware(req: NextRequest) {
   const path = req.nextUrl.pathname;
-
-  if (path.startsWith("/admin")) {
-    const session = await getToken({ 
-      req, 
-      secret: process.env.NEXTAUTH_SECRET 
-    });
-
-    if (!session) {
-      return NextResponse.redirect(new URL("/login", req.url));
-    }
-
-    return NextResponse.next();
-  }
 
   if (
     !path.startsWith('/_next') &&
@@ -29,6 +20,15 @@ export async function middleware(req: NextRequest) {
   ) {
     return handleI18nRouting(req);
   }
+
+  const country = req.headers.get('x-vercel-ip-country') || 'US';
+  const isSpanishSpeaker = SPANISH_SPEAKING_COUNTRIES.includes(country);
+
+  req.headers.set('accept-language', isSpanishSpeaker ? 'es' : 'en');
+
+  const response = handleI18nRouting(req);
+
+  response.headers.set('x-user-country', country);
 
   return NextResponse.next();
 }

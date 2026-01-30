@@ -5,6 +5,7 @@ export const reviews: ReviewItem[] = [
     id: 1,
     type: 'video',
     videoSrc: '/review1.mp4',
+    author: "Michael T.",
     role: "Husband"
   },
   {
@@ -25,6 +26,7 @@ export const reviews: ReviewItem[] = [
     id: 4,
     type: 'video',
     videoSrc: '/review2.mp4',
+    author: "David R."
   },
   {
     id: 5,
@@ -40,5 +42,32 @@ export const reviews: ReviewItem[] = [
     rating: 5,
     content: "Magia assoluta. Grazie per avermi aiutato a fare la proposta!",
     author: "Jessica M."
+  },
+  {
+    id: 7,
+    type: 'text',
+    rating: 5,
+    content: "This song saved my marriage. Honestly. It reminded us why we fell in love in the first place.",
+    author: "Mark & Lisa"
+  },
+  {
+    id: 8,
+    type: 'video',
+    videoSrc: '/review3.mp4',
+    author: "Emily B."
+  },
+  {
+    id: 9,
+    type: 'press',
+    content: "A game-changer in the gifting industry. Personalized, emotional, and affordable.",
+    pressLogo: "",
+    author: "Tech Review"
+  },
+  {
+    id: 10,
+    type: 'text',
+    rating: 5,
+    content: "My mom listens to her song every single morning. It's the best gift I've ever given her.",
+    author: "Rebecca S."
   }
 ]

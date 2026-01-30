@@ -13,7 +13,7 @@
         "review": {
             "title1": "Stories that",
             "title2": "matter",
-            "desc": "Join 100+ happy customers who turned their memories into music."
+            "desc": "Join 1.000+ happy customers who turned their memories into music."
         },
         "aboutPrice": {
           "badge": "Professional Studio Quality",
@@ -22,7 +22,7 @@
           "description": "Flowers die in a week. Dinner lasts an hour. But a song creates a memory that lives on repeat. Usually, a custom studio track costs $300+, but we've optimized the process to make professional music accessible to everyone.",
           "features": {
             "vocals": "Professional Vocals & Mixing",
-            "delivery": "Fast 3-5 Day Delivery",
+            "delivery": "Fast 24-Hour Delivery",
             "ownership": "You Own the Song (Personal Use)"
           },
           "card": {
@@ -48,7 +48,7 @@
           "step2_title": "2. Secure Payment",
           "step2_desc": "Complete your order with a flat fee of $59. No hidden costs. We accept Apple Pay, PayPal, and cards.",
           "step3_title": "3. Get Your Hit",
-          "step3_desc": "In 3-5 days, receive your custom studio-quality song in your email. Get tissues ready for the reaction!",
+          "step3_desc": "In 24 hours, receive your custom studio-quality song in your email. Get tissues ready for the reaction!",
           "cta": "Create My Song Now",
           "note": "No musical knowledge required."
         },
@@ -61,7 +61,7 @@
           "q1_question": "Can I choose the genre and mood?",
           "q1_answer": "Absolutely! Whether you want a tear-jerking acoustic ballad, an upbeat pop hit, or a classic country song, you call the shots. You'll select your preferred style in the order form.",
           "q2_question": "How long does it take to get my song?",
-          "q2_answer": "Our standard delivery time is 3-5 days.",
+          "q2_answer": "Our standard delivery time is 24 hours.",
           "q3_question": "What exactly do I receive?",
           "q3_answer": "You will receive a high-quality studio MP3 file of your custom song, ready to be played on any device.",
           "q4_question": "Is it really only $59? Are there hidden fees?",
@@ -88,5 +88,96 @@
       "col_payment": "Secure Payment",
       "payment_desc": "We accept all major credit cards and PayPal.",
       "copyright": "All rights reserved."
+    },
+    "Privacy": {
+      "title": "Privacy Policy",
+      "last_updated": "Last updated: {date}",
+      "intro": "At MyBestSongGift, we prioritize your privacy. This policy explains how we collect, use, and protect your personal information when you use our website.",
+      "sec1_title": "1. Information We Collect",
+      "sec1_desc": "We collect information you provide directly to us, such as when you place an order or contact customer support. This includes: Name, Email address, Payment information (processed securely by our payment providers), and the personal stories/details you provide for the song creation.",
+      "sec2_title": "2. How We Use Your Information",
+      "sec2_desc": "We use your data to: Process and deliver your custom song; Communicate with you regarding your order; Improve our website and services; Send promotional emails (only if you opted in).",
+      "sec3_title": "3. Cookies",
+      "sec3_desc": "We use cookies to analyze website traffic and improve your experience. You can instruct your browser to refuse all cookies.",
+      "sec4_title": "4. Data Sharing",
+      "sec4_desc": "We do not sell your personal data. We may share data with third-party service providers (like Stripe/PayPal) solely for the purpose of processing your payment and order.",
+      "contact_title": "Contact Us",
+      "contact_desc": "If you have questions about this policy, please contact us at: mybestsonggift@gmail.com"
+    },
+    "Terms": {
+      "title": "Terms of Service",
+      "last_updated": "Last updated: {date}",
+      "intro": "By accessing MyBestSongGift, you agree to these Terms. Please read them carefully.",
+      "sec1_title": "1. Service Description",
+      "sec1_desc": "We provide custom songwriting services based on user-submitted stories and preferences. The final product is a digital audio file (MP3).",
+      "sec2_title": "2. Payments and Refunds",
+      "sec2_desc": "All prices are in USD. Payment is due at the time of order. Due to the custom nature of the product, we generally do not offer refunds once the work has begun. However, if there is a factual error or quality issue, we offer free revisions to ensure your satisfaction.",
+      "sec3_title": "3. Intellectual Property",
+      "sec3_desc": "Upon full payment, you are granted a non-exclusive, perpetual license to use the song for personal use (e.g., sharing on social media, playing at events). You may not resell the song or claim authorship.",
+      "sec4_title": "4. User Conduct",
+      "sec4_desc": "You agree not to submit content that is illegal, hateful, or infringes on the rights of others.",
+      "sec5_title": "5. Limitation of Liability",
+      "sec5_desc": "MyBestSongGift shall not be liable for any indirect or consequential damages arising from the use of our service.",
+      "contact_title": "Contact",
+      "contact_desc": "For any legal inquiries, contact: mybestsonggift@gmail.com"
+    },
+    "About": {
+      "subtitle": "Who We Are",
+      "title1": "Turning moments into",
+      "title2": "masterpieces",
+      "intro_desc": "At MyBestSongGift, we believe every love story, every birthday, and every milestone deserves its own soundtrack.",
+      "story_title": "Our Story",
+      "story_p1": "It all started with a simple question: \"What is the one gift that lasts forever?\" Flowers fade, chocolates get eaten, and gadgets get outdated. But music? Music travels directly to the heart and stays there.",
+      "story_p2": "We assembled a team of talented musicians and songwriters with one goal: to make studio-quality custom songs accessible to everyone, not just celebrities.",
+      "story_p3": "Today, MyBestSongGift helps thousands of people express feelings that words alone cannot capture. We don't just create songs; we create time machines that take you back to your best memories.",
+      "quote": "Music is the shorthand of emotion.",
+      "stat1_label": "Songs Created",
+      "stat2_label": "Satisfaction",
+      "stat3_label": "Support",
+      "cta_title": "Ready to tell your story?",
+      "cta_desc": "Create a gift that will be cherished for a lifetime. Start your song today.",
+      "cta_button": "Create My Song"
+    },
+    "HowWork": {
+      "subtitle": "Simple Process",
+      "hero_title1": "From your heart to",
+      "hero_title2": "their ears",
+      "hero_desc": "Creating a professional custom song sounds complicated, but we've made it as easy as sending a text message.",
+      "step1_title": "Share Your Story",
+      "step1_desc": "It starts with you. Tell us who the song is for.",
+      "step1_detail": "Fill out our simple form. Share names, key memories, funny moments, and the specific emotion you want to convey. Choose the genre (Pop, Country, Acoustic, etc.) and mood.",
+      "step2_title": "We Create Magic",
+      "step2_desc": "Our artists get to work immediately.",
+      "step2_detail": "A professional songwriter writes the lyrics based on your story. Then, a vocalist records the song in a studio with high-quality equipment. We mix and master it to radio standards.",
+      "step3_title": "Receive Your Song",
+      "step3_desc": "Check your inbox in 24 hours.",
+      "step3_detail": "You'll receive a high-quality MP3 file directly to your email. It's yours to keep forever. Play it at a party, send it as a gift, or listen to it together.",
+      "feat1_title": "Super Fast Delivery",
+      "feat1_desc": "We know you might be in a rush. That's why we deliver the full song in just 24 hours.",
+      "feat2_title": "Studio Quality",
+      "feat2_desc": "No AI voices. Real artists, real instruments, and professional mixing.",
+      "feat3_title": "You Own It",
+      "feat3_desc": "The song is yours. Use it for personal videos, social media, or events.",
+      "cta_title": "Start your masterpiece today",
+      "cta_btn": "Create My Song",
+      "cta_guarantee": "100% Satisfaction Guarantee"
+    },
+    "NotFound": {
+      "title": "Oops! Wrong Note",
+      "desc": "It looks like the track you are looking for hasn't been recorded yet. Or maybe it was a limited edition?",
+      "button": "Back to Home",
+      "vinyl_text": "404 • PAGE NOT FOUND • 404 •"
+    },
+    "Success": {
+      "title": "Your song is on the way!",
+      "subtitle": "Payment successful. We've started working on your hit.",
+      "step1_title": "Order Confirmed",
+      "step1_desc": "We have received your story and details perfectly.",
+      "step2_title": "Production Started",
+      "step2_desc": "Our artists are writing lyrics and composing the melody right now.",
+      "step3_title": "Check Your Email",
+      "step3_desc": "In 24 hours, you'll receive the studio-quality MP3 file in your inbox.",
+      "button": "Back to Home",
+      "note": "Didn't receive a confirmation email? Check your spam folder or contact us."
     }
 }
