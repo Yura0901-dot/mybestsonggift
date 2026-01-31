@@ -18,7 +18,7 @@ export async function middleware(req: NextRequest) {
     !path.startsWith('/login') && 
     !path.includes('.')
   ) {
-    return handleI18nRouting(req);
+    return NextResponse.next()
   }
 
   const country = req.headers.get('x-vercel-ip-country') || 'US';
@@ -30,7 +30,7 @@ export async function middleware(req: NextRequest) {
 
   response.headers.set('x-user-country', country);
 
-  return NextResponse.next();
+  return response
 }
 
 export const config = {
