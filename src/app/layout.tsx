@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Bodoni_Moda, Lato } from 'next/font/google'
 import "./globals.css";
-import { routing } from "@/i18n/routing";
-import { setRequestLocale } from "next-intl/server";
-import { notFound } from "next/navigation";
 
 const lato = Lato({
   subsets: ['latin'],
@@ -21,23 +18,15 @@ export const metadata: Metadata = {
   description: "Custom songs for your loved ones",
 };
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
-}
+
 
 export default async function RootLayout({
-  children,
-  params
+  children
 }: Readonly<{
-  children: React.ReactNode,
-  params: Promise<{ locale: string }>
+  children: React.ReactNode
 }>) {
-  const {locale} = await params
-
-  setRequestLocale(locale)
-
   return (
-    <html lang={locale}>
+    <html lang='en'>
       <body
         className={`${bodoni.variable} ${lato.variable} antialiased`}
       >
