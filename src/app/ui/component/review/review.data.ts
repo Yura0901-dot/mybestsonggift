@@ -12,7 +12,7 @@ export const reviews: ReviewItem[] = [
     id: 2,
     type: 'text',
     rating: 5,
-    content: "I've never seen my dad cry before. Like, never. We played this song at his 60th birthday party and he just broke down in happy tears. Best $59 I've ever spent. Seriously.",
+    content: "I've never seen my dad cry before. Like, never. We played this song at his 60th birthday party and he just broke down in happy tears. Best $49.99 I've ever spent. Seriously.",
     author: "Sarah Jenkins"
   },
   {

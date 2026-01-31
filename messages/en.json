@@ -28,7 +28,7 @@
           "card": {
             "popularTag": "Most Popular Choice",
             "flatRate": "Flat Rate",
-            "price": "59",
+            "price": "49.99",
             "noFees": "No hidden fees. One-time payment.",
             "lyrics": "Lyrics writing",
             "recording": "Studio recording",
@@ -46,7 +46,7 @@
           "step1_title": "1. Tell Us Your Story",
           "step1_desc": "Fill out a quick form. Share names, memories, inside jokes, and the mood you want. It takes 5 minutes.",
           "step2_title": "2. Secure Payment",
-          "step2_desc": "Complete your order with a flat fee of $59. No hidden costs. We accept Apple Pay, PayPal, and cards.",
+          "step2_desc": "Complete your order with a flat fee of $49.99. No hidden costs. We accept Apple Pay, PayPal, and cards.",
           "step3_title": "3. Get Your Hit",
           "step3_desc": "In 24 hours, receive your custom studio-quality song in your email. Get tissues ready for the reaction!",
           "cta": "Create My Song Now",
@@ -64,8 +64,8 @@
           "q2_answer": "Our standard delivery time is 24 hours.",
           "q3_question": "What exactly do I receive?",
           "q3_answer": "You will receive a high-quality studio MP3 file of your custom song, ready to be played on any device.",
-          "q4_question": "Is it really only $59? Are there hidden fees?",
-          "q4_answer": "Yes, it is a one-time flat fee of $59. You get full ownership of the song for personal use. No subscriptions, no royalties, no hidden costs.",
+          "q4_question": "Is it really only $49.99? Are there hidden fees?",
+          "q4_answer": "Yes, it is a one-time flat fee of $49.99. You get full ownership of the song for personal use. No subscriptions, no royalties, no hidden costs.",
           "q5_question": "What if I don't like the song?",
           "q5_answer": "Your satisfaction is our priority. If there is a mistake in the lyrics or names, we will fix it for free. We strive to make every song a hit that you'll cherish forever."
         }
