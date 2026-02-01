@@ -10,6 +10,46 @@
             "listen": "Listen to examples",
             "reviews": "based on real reviews"
         },
+        "samples": {
+          "subtitle": "Listen to Our Work",
+          "title_main": "Real Songs.",
+          "title_accent": "Real Emotions.",
+          "description": "Don't just take our word for it. Here are examples of custom songs we've created for people just like you.",
+          "cta_button": "Create My Own Song",
+          "cta_sub": "100% Custom Made. Studio Quality.",
+          "items": {
+            "wedding": {
+              "title": "Forever Starts Today",
+              "genre": "Cinematic Pop",
+              "occasion": "Wedding Day"
+            },
+            "birthday": {
+              "title": "Happy Birthday",
+              "genre": "Upbeat Pop / Funk",
+              "occasion": "Birthday Party"
+            },
+            "country": {
+              "title": "My Greatest Pride",
+              "genre": "Modern Country",
+              "occasion": "Father to Son"
+            },
+            "soul": {
+              "title": "Just Because I Love You",
+              "genre": "R&B / Soul",
+              "occasion": "Romance"
+            },
+            "acoustic": {
+              "title": "All The Moments",
+              "genre": "Acoustic Folk",
+              "occasion": "Anniversary"
+            },
+            "baby": {
+              "title": "My Little Miracle",
+              "genre": "Soft Acoustic",
+              "occasion": "New Baby Lullaby"
+            }
+          }
+        },
         "review": {
             "title1": "Stories that",
             "title2": "matter",
@@ -102,7 +142,9 @@
       "sec4_title": "4. Data Sharing",
       "sec4_desc": "We do not sell your personal data. We may share data with third-party service providers (like Stripe/PayPal) solely for the purpose of processing your payment and order.",
       "contact_title": "Contact Us",
-      "contact_desc": "If you have questions about this policy, please contact us at: mybestsonggift@gmail.com"
+      "contact_desc": "If you have questions about this policy, please contact us at: mybestsonggift@gmail.com",
+      "refund_title": "Refund Policy",
+      "refund_desc": "Due to the custom and digital nature of our products, all sales are final. Once the creative process has begun or the song has been delivered, we cannot offer refunds or exchanges."
     },
     "Terms": {
       "title": "Terms of Service",
@@ -179,5 +221,37 @@
       "step3_desc": "In 24 hours, you'll receive the studio-quality MP3 file in your inbox.",
       "button": "Back to Home",
       "note": "Didn't receive a confirmation email? Check your spam folder or contact us."
+    },
+    "OrderForm": {
+      "main_title": "Start Your Custom Song",
+      "main_desc": "Fill out the details below, and our artists will start composing your masterpiece.",
+      "step1_title": "1. Choose a Vibe",
+      "most_important": "Most Important",
+      "genre_other": "Other / Mix",
+      "genre_other_placeholder": "e.g. Reggaeton, Afrobeats, or Heavy Metal...",
+      "song_language": "Song Language",
+      "recipient_label": "Who is this song for?",
+      "recipient_placeholder": "e.g. My Wife Sarah",
+      "occasion_label": "What's the occasion?",
+      "occasion_placeholder": "e.g. 10th Anniversary, Birthday, Just Because",
+      "step2_title": "2. Tell Your Story",
+      "story_placeholder": "Share specific details: names, places, favorite memories, inside jokes, or dates. The more details, the better the song!",
+      "min_chars": "Min 50 chars",
+      "contact_title": "Where to send the song?",
+      "name_placeholder": "Your Name",
+      "email_placeholder": "Email Address",
+      "create_button": "Create My Song",
+      "processing": "Processing...",
+      "secure_badge": "Secure SSL Payment • 100% Money Back Guarantee",
+      "genres": {
+        "pop": { "label": "Pop / Top 40", "desc": "Catchy & Upbeat" },
+        "acoustic": { "label": "Acoustic / Folk", "desc": "Warm & Intimate" },
+        "hiphop": { "label": "Hip-Hop / R&B", "desc": "Rhythmic & Cool" },
+        "rock": { "label": "Rock", "desc": "Energetic & Bold" },
+        "edm": { "label": "Electronic / Dance", "desc": "Party & Club" },
+        "country": { "label": "Country", "desc": "Storytelling" },
+        "jazz": { "label": "Jazz / Soul", "desc": "Classy & Smooth" },
+        "cinematic": { "label": "Cinematic", "desc": "Movie Soundtrack" }
+      }
     }
 }

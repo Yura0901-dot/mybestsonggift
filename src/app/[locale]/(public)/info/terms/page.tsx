@@ -1,11 +1,17 @@
 import { useTranslations } from 'next-intl';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Terms of Service | SongToGift",
+  description: "Review the Terms of Service for SongToGift. Understand the rules, rights, and responsibilities when using our custom song creation service."
+}
 
 const Terms = () => {
   const t = useTranslations('Terms');
   const currentDate = new Date().toLocaleDateString();
 
   return (
-    <main className="pt-32 pb-24 bg-white min-h-screen">
+    <main className="pt-16 pb-24 bg-white min-h-screen">
       <div className="container mx-auto px-4 md:px-6 max-w-3xl">
         
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#2D2A26] mb-6">

@@ -10,6 +10,46 @@
             "listen": "Escuchar ejemplos",
             "reviews": "basado en reseñas reales"
         },
+        "samples": {
+          "subtitle": "Escucha nuestro trabajo",
+          "title_main": "Canciones Reales.",
+          "title_accent": "Emociones Reales.",
+          "description": "No te quedes solo con nuestra palabra. Aquí tienes ejemplos de canciones personalizadas que hemos creado para personas como tú.",
+          "cta_button": "Crear mi propia canción",
+          "cta_sub": "100% Personalizado. Calidad de estudio.",
+          "items": {
+            "wedding": {
+              "title": "El Para Siempre Empieza Hoy",
+              "genre": "Pop Cinematográfico",
+              "occasion": "Día de Boda"
+            },
+            "birthday": {
+              "title": "Feliz Cumpleaños",
+              "genre": "Pop Alegre / Funk",
+              "occasion": "Fiesta de Cumpleaños"
+            },
+            "country": {
+              "title": "Mi Mayor Orgullo",
+              "genre": "Country Moderno",
+              "occasion": "De Padre a Hijo"
+            },
+            "soul": {
+              "title": "Solo Porque Te Amo",
+              "genre": "R&B / Soul",
+              "occasion": "Romance"
+            },
+            "acoustic": {
+              "title": "Todos Los Momentos",
+              "genre": "Folk Acústico",
+              "occasion": "Aniversario"
+            },
+            "baby": {
+              "title": "Mi Pequeño Milagro",
+              "genre": "Acústico Suave",
+              "occasion": "Canción de Cuna"
+            }
+          }
+        },
         "review": {
             "title1": "Storie che",
             "title2": "contano",
@@ -28,7 +68,7 @@
           "card": {
             "popularTag": "La Opción Más Popular",
             "flatRate": "Tarifa Plana",
-            "price": "59",
+            "price": "49.99",
             "noFees": "Sin cargos ocultos. Pago único.",
             "lyrics": "Escritura de letra",
             "recording": "Grabación de estudio",
@@ -102,7 +142,9 @@
       "sec4_title": "4. Compartir datos",
       "sec4_desc": "No vendemos sus datos personales. Podemos compartir datos con proveedores de servicios (como Stripe/PayPal) únicamente para procesar su pago.",
       "contact_title": "Contáctenos",
-      "contact_desc": "Si tiene preguntas, contáctenos en: mybestsonggift@gmail.com"
+      "contact_desc": "Si tiene preguntas, contáctenos en: mybestsonggift@gmail.com",
+      "refund_title": "Política de Reembolso",
+      "refund_desc": "Debido a la naturaleza personalizada y digital de nuestros productos, todas las ventas son finales. Una vez iniciado el proceso creativo o entregada la canción, no podemos ofrecer reembolsos ni cambios."
     },
     "Terms": {
       "title": "Términos de Servicio",
@@ -179,5 +221,37 @@
       "step3_desc": "En 24 horas, recibirás el archivo MP3 con calidad de estudio en tu bandeja de entrada.",
       "button": "Volver al inicio",
       "note": "¿No recibiste el correo de confirmación? Revisa tu carpeta de spam o contáctanos."
+    },
+    "OrderForm": {
+      "main_title": "Comienza Tu Canción Personalizada",
+      "main_desc": "Completa los detalles a continuación y nuestros artistas comenzarán a componer tu obra maestra.",
+      "step1_title": "1. Elige el Estilo",
+      "most_important": "Más Importante",
+      "genre_other": "Otro / Mix",
+      "genre_other_placeholder": "ej. Reggaeton, Bachata, Salsa...",
+      "song_language": "Idioma de la canción",
+      "recipient_label": "¿Para quién es la canción?",
+      "recipient_placeholder": "ej. Mi esposa Ana",
+      "occasion_label": "¿Cuál es la ocasión?",
+      "occasion_placeholder": "ej. Aniversario, Cumpleaños, Porque sí",
+      "step2_title": "2. Cuéntanos tu Historia",
+      "story_placeholder": "Comparte detalles específicos: nombres, lugares, recuerdos favoritos, bromas internas o fechas. ¡Cuantos más detalles, mejor será la canción!",
+      "min_chars": "Mínimo 50 caracteres",
+      "contact_title": "¿A dónde enviamos la canción?",
+      "name_placeholder": "Tu Nombre",
+      "email_placeholder": "Correo Electrónico",
+      "create_button": "Crear Mi Canción",
+      "processing": "Procesando...",
+      "secure_badge": "Pago Seguro SSL • Garantía de Devolución 100%",
+      "genres": {
+        "pop": { "label": "Pop / Top 40", "desc": "Pegadizo y Alegre" },
+        "acoustic": { "label": "Acústico / Folk", "desc": "Cálido e Íntimo" },
+        "hiphop": { "label": "Hip-Hop / R&B", "desc": "Rítmico y Fresco" },
+        "rock": { "label": "Rock", "desc": "Enérgico y Audaz" },
+        "edm": { "label": "Electrónica / Dance", "desc": "Fiesta y Club" },
+        "country": { "label": "Country", "desc": "Narrativo" },
+        "jazz": { "label": "Jazz / Soul", "desc": "Elegante y Suave" },
+        "cinematic": { "label": "Cinematográfico", "desc": "Banda Sonora de Película" }
+      }
     }
 }

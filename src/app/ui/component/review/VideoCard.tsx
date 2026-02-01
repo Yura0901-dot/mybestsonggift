@@ -3,6 +3,7 @@
 import { useRef, useState } from "react"
 import { Play } from "lucide-react"
 import { ReviewItem } from "./review.interface"
+import cn from 'clsx'
 
 const VideoCard = ({ item }: { item: ReviewItem }) => {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -30,7 +31,7 @@ const VideoCard = ({ item }: { item: ReviewItem }) => {
         <video
           ref={videoRef}
           src={`${item.videoSrc}#t=0.001`} 
-          className="w-full h-full object-cover"
+          className={cn("w-full h-full", item.id === 8 ? 'object-fill' : 'object-cover')}
           playsInline
           loop
           muted={false}

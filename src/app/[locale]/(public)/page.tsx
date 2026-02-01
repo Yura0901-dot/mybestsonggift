@@ -5,6 +5,7 @@ import HeroSection from "@/app/ui/component/HeroSections"
 import StepsSection from "@/app/ui/component/steps/StepsSection"
 import { Metadata } from "next"
 import Script from "next/script"
+import MusicSamples from "@/app/ui/component/sampes/MusicSamples"
 
 export const metadata: Metadata = {
   title: "SongToGift | Perfect Custom Songs for Any Occasion",
@@ -41,6 +42,7 @@ const Home = () => {
       </Script>
 
       <HeroSection/>
+      <MusicSamples/>
       <ReviewSection/>
       <AboutPriceSection/>
       <StepsSection/>
