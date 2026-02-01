@@ -115,7 +115,12 @@
         "howWork": "How it works",
         "FAQ": "FAQ",
         "order": "Order song",
-        "language": "Language"
+        "language": "Language",
+        "TopBanner": {
+          "limited_offer": "Limited Offer",
+          "text": "Get your custom song for just",
+          "cta": "Claim Now"
+        }
     },
     "Footer": {
       "brand_desc": "We turn your favorite memories into custom studio-quality songs. The perfect gift for weddings, anniversaries, and birthdays.",

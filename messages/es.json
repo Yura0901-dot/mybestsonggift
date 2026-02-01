@@ -115,7 +115,12 @@
         "howWork": "Cómo funciona",
         "FAQ": "Preguntas frecuentes",
         "order": "Pedir canción",
-        "language": "Idioma"
+        "language": "Idioma",
+        "TopBanner": {
+          "limited_offer": "Oferta Limitada",
+          "text": "Obtén tu canción personalizada por solo",
+          "cta": "Obtener ahora"
+        }
     },
     "Footer": {
       "brand_desc": "Convertimos tus recuerdos favoritos en canciones personalizadas con calidad de estudio. El regalo perfecto para bodas, aniversarios y cumpleaños.",
