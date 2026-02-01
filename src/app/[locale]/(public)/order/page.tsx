@@ -1,11 +1,5 @@
 import { useTranslations } from "next-intl"
 import OrderForm from "./orderForm/OrderForm"
-import { Metadata } from "next"
-
-export const metadata: Metadata = {
-    "title": "Create Your Custom Song | SongToGift",
-    "description": "Order a personalized song for weddings, birthdays, or anniversaries. Professional studio quality, custom lyrics, and fast delivery. Start creating your masterpiece today."
-}
 
 const Order = () => {
   const t = useTranslations('OrderForm')
