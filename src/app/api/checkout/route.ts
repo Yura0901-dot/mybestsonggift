@@ -34,7 +34,7 @@ export async function POST(req: Request) {
               name: `Custom Song: ${genre}`,
               description: `For: ${recipient}. Occasion: ${occasion}`,
             },
-            unit_amount: 50, 
+            unit_amount: 4999, 
           },
           quantity: 1,
         },

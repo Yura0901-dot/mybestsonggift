@@ -27,7 +27,7 @@ const Success = () => {
   ]
 
   return (
-    <main className="pt-32 pb-24 bg-[#FDFBF7] min-h-screen flex items-center justify-center">
+    <main className="pt-16 pb-24 bg-[#FDFBF7] min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-4 md:px-6 max-w-2xl">
         
         <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-xl border border-[#D4AF37]/10 text-center relative overflow-hidden">

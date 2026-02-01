@@ -12,7 +12,7 @@ const Privacy = () => {
   const currentDate = new Date().toLocaleDateString();
 
   return (
-    <main className="pt-16 pb-24 bg-white min-h-screen">
+    <main className="pt-6 pb-24 bg-white min-h-screen">
       <div className="container mx-auto px-4 md:px-6 max-w-3xl">
 
         <BackButton/>

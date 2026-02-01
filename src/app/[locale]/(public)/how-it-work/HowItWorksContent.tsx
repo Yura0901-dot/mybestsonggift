@@ -13,7 +13,7 @@ const HowItWorksContent = () => {
   const features = getFeatures(t)
 
   return (
-    <main className="pt-12 pb-24 bg-[#FDFBF7] min-h-screen overflow-hidden">
+    <main className="pt-6 pb-24 bg-[#FDFBF7] min-h-screen overflow-hidden">
       
       <section className="container mx-auto px-4 md:px-6 mb-20">
 
