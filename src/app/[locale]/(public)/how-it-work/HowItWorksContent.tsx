@@ -4,6 +4,7 @@ import { CheckCircle, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { getFeatures, getSteps } from "./how-work.data"
+import BackButton from "@/app/ui/BackButton"
 
 const HowItWorksContent = () => {
   const t = useTranslations('HowWork')
@@ -12,9 +13,12 @@ const HowItWorksContent = () => {
   const features = getFeatures(t)
 
   return (
-    <main className="pt-32 pb-24 bg-[#FDFBF7] min-h-screen overflow-hidden">
+    <main className="pt-12 pb-24 bg-[#FDFBF7] min-h-screen overflow-hidden">
       
       <section className="container mx-auto px-4 md:px-6 mb-20">
+
+        <BackButton/>
+
         <div className="max-w-4xl mx-auto text-center">
           <motion.span 
             initial={{ opacity: 0, y: 10 }}

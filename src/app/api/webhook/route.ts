@@ -26,14 +26,26 @@ export async function POST(req: Request) {
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session;
 
+    const metadata = session.metadata || {};
+
+    let fullStory = '';
+    Object.keys(metadata).sort().forEach((key) => {
+        if (key.startsWith('story_chunk_')) {
+            fullStory += metadata[key];
+        }
+    });
+
+    if (!fullStory && metadata.story_snippet) {
+        fullStory = metadata.story_snippet;
+    }
+
     const { 
         customer_name, 
         genre, 
         recipient, 
         occasion,
-        lang,
-        story_snippet 
-    } = session.metadata || {};
+        lang 
+    } = metadata;
     
     const customerEmail = session.customer_details?.email;
     const amountTotal = session.amount_total ? (session.amount_total / 100).toFixed(2) : '0';
@@ -50,7 +62,7 @@ export async function POST(req: Request) {
             genre: genre || 'Unknown',
             occasion: occasion || 'Unknown',
             recipient: recipient || 'Unknown',
-            story: story_snippet || 'No story provided in metadata',
+            story: fullStory || 'No story provided in metadata',
             orderId: session.id,
             amount: `$${amountTotal}`,
             lang: lang

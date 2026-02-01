@@ -20,33 +20,33 @@
           "items": {
             "wedding": {
               "title": "Forever Starts Today",
-              "genre": "Cinematic Pop",
-              "occasion": "Wedding Day"
+              "genre": "Romantic Pop",
+              "occasion": "Wedding Song"
             },
             "birthday": {
-              "title": "Happy Birthday",
-              "genre": "Upbeat Pop / Funk",
-              "occasion": "Birthday Party"
+              "title": "David, Today You Rise",
+              "genre": "Modern Pop / Dance Pop",
+              "occasion": "Jewish Celebration / Party"
             },
             "country": {
               "title": "My Greatest Pride",
-              "genre": "Modern Country",
-              "occasion": "Father to Son"
+              "genre": "Modern Pop / Soft Cinematic",
+              "occasion": "Birthday Song for Son"
             },
             "soul": {
               "title": "Just Because I Love You",
-              "genre": "R&B / Soul",
-              "occasion": "Romance"
+              "genre": "Soft R&B / Emotional Pop",
+              "occasion": "Love Song"
             },
             "acoustic": {
-              "title": "All The Moments",
-              "genre": "Acoustic Folk",
+              "title": "All the Moments We Are",
+              "genre": "Indie Pop / Acoustic Emotional",
               "occasion": "Anniversary"
             },
             "baby": {
               "title": "My Little Miracle",
-              "genre": "Soft Acoustic",
-              "occasion": "New Baby Lullaby"
+              "genre": "Modern Emotional Pop",
+              "occasion": "Birthday Song for Daughter"
             }
           }
         },
@@ -253,5 +253,8 @@
         "jazz": { "label": "Jazz / Soul", "desc": "Classy & Smooth" },
         "cinematic": { "label": "Cinematic", "desc": "Movie Soundtrack" }
       }
+    },
+    "Common": {
+      "back_home": "Back to Home"
     }
 }

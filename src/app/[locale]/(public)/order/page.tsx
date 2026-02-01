@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl"
 import OrderForm from "./orderForm/OrderForm"
+import BackButton from "@/app/ui/BackButton"
 
 const Order = () => {
   const t = useTranslations('OrderForm')
@@ -7,6 +8,8 @@ const Order = () => {
   return (
     <main className="pt-16 pb-24 bg-[#FDFBF7] min-h-screen">
       <div className="container mx-auto px-4 max-w-3xl">
+
+        <BackButton/>
         
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#2D2A26] mb-4">

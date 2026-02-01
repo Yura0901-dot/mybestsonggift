@@ -20,33 +20,33 @@
           "items": {
             "wedding": {
               "title": "El Para Siempre Empieza Hoy",
-              "genre": "Pop Cinematográfico",
-              "occasion": "Día de Boda"
+              "genre": "Pop Romántico",
+              "occasion": "Canción de Boda"
             },
             "birthday": {
-              "title": "Feliz Cumpleaños",
-              "genre": "Pop Alegre / Funk",
-              "occasion": "Fiesta de Cumpleaños"
+              "title": "David, Hoy Te Elevas",
+              "genre": "Pop Moderno / Dance Pop",
+              "occasion": "Celebración Judía / Fiesta"
             },
             "country": {
               "title": "Mi Mayor Orgullo",
-              "genre": "Country Moderno",
-              "occasion": "De Padre a Hijo"
+              "genre": "Pop Moderno / Suave Cinematográfico",
+              "occasion": "Cumpleaños para Hijo"
             },
             "soul": {
               "title": "Solo Porque Te Amo",
-              "genre": "R&B / Soul",
-              "occasion": "Romance"
+              "genre": "R&B Suave / Pop Emocional",
+              "occasion": "Canción de Amor"
             },
             "acoustic": {
-              "title": "Todos Los Momentos",
-              "genre": "Folk Acústico",
+              "title": "Todos Los Momentos Que Somos",
+              "genre": "Indie Pop / Acústico Emocional",
               "occasion": "Aniversario"
             },
             "baby": {
               "title": "Mi Pequeño Milagro",
-              "genre": "Acústico Suave",
-              "occasion": "Canción de Cuna"
+              "genre": "Pop Emocional Moderno",
+              "occasion": "Cumpleaños para Hija"
             }
           }
         },
@@ -253,5 +253,8 @@
         "jazz": { "label": "Jazz / Soul", "desc": "Elegante y Suave" },
         "cinematic": { "label": "Cinematográfico", "desc": "Banda Sonora de Película" }
       }
+    },
+    "Common": {
+      "back_home": "Volver al Inicio"
     }
 }

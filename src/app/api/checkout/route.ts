@@ -10,7 +10,19 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { genre, recipient, occasion, story, email, name, lang } = body;
 
-    const truncatedStory = story.length > 400 ? story.substring(0, 400) + '...' : story;
+    let metadata: any = {
+      customer_name: name,
+      genre: genre,
+      recipient: recipient,
+      occasion: occasion,
+      lang: lang,
+    };
+
+    const chunkSize = 500;
+    for (let i = 0; i < story.length; i += chunkSize) {
+      const chunk = story.substring(i, i + chunkSize);
+      metadata[`story_chunk_${i / chunkSize}`] = chunk;
+    }
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -31,14 +43,7 @@ export async function POST(req: Request) {
       success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/order/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/order`,
       customer_email: email,
-      metadata: {
-        customer_name: name,
-        genre: genre,
-        recipient: recipient,
-        occasion: occasion,
-        lang: lang,
-        story_snippet: truncatedStory 
-      },
+      metadata: metadata
     });
 
     return NextResponse.json({ url: session.url });

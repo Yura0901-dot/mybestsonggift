@@ -60,7 +60,7 @@ const ReviewsSections = () => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <section className="py-24 bg-[#FDFBF7] relative overflow-hidden" id="video-reviews">
+    <section className="py-24 bg-[#FDFBF7] relative overflow-hidden">
 
       <div className="container mx-auto px-4 md:px-6">
 

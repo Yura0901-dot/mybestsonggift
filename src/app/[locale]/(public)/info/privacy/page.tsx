@@ -1,3 +1,4 @@
+import BackButton from '@/app/ui/BackButton';
 import { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 
@@ -13,6 +14,8 @@ const Privacy = () => {
   return (
     <main className="pt-16 pb-24 bg-white min-h-screen">
       <div className="container mx-auto px-4 md:px-6 max-w-3xl">
+
+        <BackButton/>
         
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#2D2A26] mb-6">
           {t('title')}
