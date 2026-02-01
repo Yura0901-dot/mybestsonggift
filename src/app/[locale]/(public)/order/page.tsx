@@ -1,5 +1,3 @@
-'use client'
-
 import { useTranslations } from "next-intl"
 import OrderForm from "./orderForm/OrderForm"
 import { Metadata } from "next"
