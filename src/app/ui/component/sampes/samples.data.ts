@@ -9,7 +9,7 @@ export const SAMPLES = [
   { 
     id: 'birthday', 
     icon: Sparkles,
-    src: '/samples/birthday.mp3' 
+    src: '/samples/baby.mp3' 
   },
   { 
     id: 'country', 
@@ -29,6 +29,6 @@ export const SAMPLES = [
   { 
     id: 'baby', 
     icon: Baby,
-    src: '/samples/baby.mp3' 
+    src: '/samples/miracle.mp3' 
   },
 ]

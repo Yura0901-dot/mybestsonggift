@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Logo from "../Logo"
 import { LanguageSwitcher } from "../LanguageSwitcher"
 import { useTranslations } from "next-intl"
+import { TopBanner } from "./TopBanner"
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
@@ -48,6 +49,8 @@ export function Header() {
   ]
 
   return (
+    <>
+    <TopBanner/>
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled || isMobileMenuOpen
@@ -138,5 +141,6 @@ export function Header() {
         )}
       </AnimatePresence>
     </header>
+    </>
   )
 }

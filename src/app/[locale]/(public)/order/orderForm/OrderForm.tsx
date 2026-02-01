@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { 
   Disc,
   CheckCircle, Loader2, AlertCircle,
-  Globe, ChevronDown, Check
+  Globe, ChevronDown, Check, PenLine
 } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { LANGUAGES } from './languages.data'
@@ -21,6 +21,7 @@ const OrderForm = () => {
     genre: '',
     customGenre: '',
     lang: 'English',
+    customLang: '',
     recipient: '',
     occasion: '',
     story: '',
@@ -56,6 +57,7 @@ const OrderForm = () => {
     setLoading(true)
 
     const finalGenre = formData.genre === 'other' ? formData.customGenre : formData.genre
+    const finalLang = formData.lang === 'Other' ? formData.customLang : formData.lang
 
     try {
       const response = await fetch('/api/checkout', {
@@ -63,7 +65,8 @@ const OrderForm = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
              ...formData, 
-             genre: finalGenre
+             genre: finalGenre,
+             lang: finalLang 
         }),
       })
 
@@ -76,7 +79,9 @@ const OrderForm = () => {
     }
   }
 
-  const selectedLangObj = LANGUAGES.find(l => l.label === formData.lang) || LANGUAGES[0]
+  const selectedLangObj = formData.lang === 'Other' 
+    ? { label: t('lang_other'), flag: '🌍' } 
+    : LANGUAGES.find(l => l.label === formData.lang) || LANGUAGES[0]
 
   return (
     <form onSubmit={handleSubmit} className="space-y-12">
@@ -217,7 +222,46 @@ const OrderForm = () => {
                                     {formData.lang === lang.label && <Check className="w-4 h-4 text-[#D4AF37]" />}
                                 </li>
                             ))}
+                            <li 
+                                key="other-lang"
+                                onClick={() => handleLanguageSelect('Other')}
+                                className="px-5 py-3 hover:bg-[#FDFBF7] cursor-pointer flex items-center justify-between group border-t border-gray-50"
+                            >
+                                <div className="flex items-center gap-3">
+                                    <span className="text-xl flex items-center justify-center w-6"><PenLine className="w-4 h-4"/></span>
+                                    <span className={`font-medium group-hover:text-[#D4AF37] ${formData.lang === 'Other' ? 'text-[#D4AF37]' : 'text-gray-600'}`}>
+                                        {t('lang_other')}
+                                    </span>
+                                </div>
+                                {formData.lang === 'Other' && <Check className="w-4 h-4 text-[#D4AF37]" />}
+                            </li>
                         </motion.ul>
+                    )}
+                </AnimatePresence>
+
+                <AnimatePresence>
+                    {formData.lang === 'Other' && (
+                        <motion.div 
+                            initial={{ opacity: 0, height: 0, marginTop: 0 }} 
+                            animate={{ opacity: 1, height: 'auto', marginTop: 8 }}
+                            exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                            className="overflow-hidden"
+                        >
+                            <div className="relative">
+                                <input
+                                    type="text"
+                                    name="customLang"
+                                    placeholder={t('lang_other_placeholder')}
+                                    value={formData.customLang}
+                                    onChange={handleChange}
+                                    maxLength={15} 
+                                    className="w-full px-5 py-3 rounded-xl border-2 border-[#D4AF37]/30 bg-[#FDFBF7] focus:border-[#D4AF37] outline-none text-[#2D2A26] pr-12"
+                                />
+                                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-gray-400">
+                                    {formData.customLang.length}/15
+                                </span>
+                            </div>
+                        </motion.div>
                     )}
                 </AnimatePresence>
             </div>

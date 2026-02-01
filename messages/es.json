@@ -243,6 +243,8 @@
       "create_button": "Crear Mi Canción",
       "processing": "Procesando...",
       "secure_badge": "Pago Seguro SSL • Garantía de Devolución 100%",
+      "lang_other": "Otro",
+      "lang_other_placeholder": "Escriba el idioma (máximo 15 caracteres)",
       "genres": {
         "pop": { "label": "Pop / Top 40", "desc": "Pegadizo y Alegre" },
         "acoustic": { "label": "Acústico / Folk", "desc": "Cálido e Íntimo" },

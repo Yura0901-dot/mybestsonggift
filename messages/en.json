@@ -243,6 +243,8 @@
       "create_button": "Create My Song",
       "processing": "Processing...",
       "secure_badge": "Secure SSL Payment • 100% Money Back Guarantee",
+      "lang_other": "Other",
+      "lang_other_placeholder": "Type language (max 15 chars)",
       "genres": {
         "pop": { "label": "Pop / Top 40", "desc": "Catchy & Upbeat" },
         "acoustic": { "label": "Acoustic / Folk", "desc": "Warm & Intimate" },
