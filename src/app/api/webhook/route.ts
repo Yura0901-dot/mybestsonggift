@@ -40,7 +40,7 @@ export async function POST(req: Request) {
 
     if (customer_name && customerEmail) {
         await resend.emails.send({
-          from: 'SongToGift Orders <onboarding@resend.dev>',
+          from: 'SongToGift Orders <orders@mybestsonggift.com>',
           to: ADMIN_EMAIL,
           subject: `💰 New Order: $${amountTotal} from ${customer_name}`,
           // @ts-ignore
