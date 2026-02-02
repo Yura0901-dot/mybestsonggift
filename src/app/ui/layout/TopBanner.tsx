@@ -18,12 +18,19 @@ export const TopBanner = () => {
           </span>
         </div>
 
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
           <span className="opacity-80 hidden sm:inline">{t('text')}</span>
           <span className="opacity-80 sm:hidden">Only</span> 
           
-          <span className="text-[#D4AF37] font-bold line-through opacity-60 ml-1">$100</span>
-          <span className="text-white font-bold text-base ml-1">$49.99</span>
+          <div className="flex items-center gap-2 bg-white/10 px-2 py-0.5 rounded-md border border-white/10">
+            <span className="text-gray-300 font-medium line-through decoration-gray-400 text-xl">
+              $100
+            </span>
+            
+            <span className="text-[#D4AF37] font-black text-base leading-none">
+              $49.99
+            </span>
+          </div>
         </div>
 
         <Link href="/order" className="hidden md:flex items-center gap-1 hover:text-[#D4AF37] transition-colors underline decoration-[#D4AF37]/50 underline-offset-4 ml-2">
