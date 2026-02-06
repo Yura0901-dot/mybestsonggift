@@ -10,11 +10,22 @@ import MusicSamples from "@/app/ui/component/sampes/MusicSamples"
 export const metadata: Metadata = {
   title: "SongToGift | Perfect Custom Songs for Any Occasion",
   description: "Create unique, personalized songs for your loved ones. The perfect musical gift for birthdays, weddings, and anniversaries.",
+  metadataBase: new URL('https://mybestsonggift.com'), 
   keywords: ["custom song", "personalized gift", "anniversary music", "song gift"],
   openGraph: {
     title: "SongToGift | Create Your Personalized Musical Gift",
     description: "Surprise your loved ones with a custom-written song. Order your unique gift today!",
     type: "website",
+    url: "https://mybestsonggift.com",
+    siteName: "SongToGift",
+    images: [
+      {
+        url: "/opengraph-image.jpg", 
+        width: 1200,
+        height: 630,
+        alt: "SongToGift - Personalized Musical Gift",
+      },
+    ],
   },
 };
 
