@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "SongToGift",
     images: [
       {
-        url: "/opengraph-image.jpg", 
+        url: "/opengraph-image.png", 
         width: 1200,
         height: 630,
         alt: "SongToGift - Personalized Musical Gift",
