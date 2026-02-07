@@ -44,6 +44,7 @@ export async function POST(req: Request) {
         genre, 
         recipient, 
         occasion,
+        referenceLink,
         lang 
     } = metadata;
     
@@ -59,6 +60,7 @@ export async function POST(req: Request) {
           react: AdminNewOrderEmail({
             customerName: customer_name,
             customerEmail: customerEmail,
+            referenceLink: referenceLink,
             genre: genre || 'Unknown',
             occasion: occasion || 'Unknown',
             recipient: recipient || 'Unknown',

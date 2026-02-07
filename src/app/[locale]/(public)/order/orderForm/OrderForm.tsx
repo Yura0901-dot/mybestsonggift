@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { 
   Disc,
   CheckCircle, Loader2, AlertCircle,
-  Globe, ChevronDown, Check, PenLine
+  Globe, ChevronDown, Check, PenLine, Link
 } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { LANGUAGES } from './languages.data'
@@ -15,18 +15,21 @@ const OrderForm = () => {
   const t = useTranslations('OrderForm')
   const [loading, setLoading] = useState(false)
   const [isLangOpen, setIsLangOpen] = useState(false)
+  const [promoError, setPromoError] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null)
   
   const [formData, setFormData] = useState({
     genre: '',
     customGenre: '',
+    referenceLink: '',
     lang: 'English',
     customLang: '',
     recipient: '',
     occasion: '',
     story: '',
     email: '',
-    name: ''
+    name: '',
+    promoCode: ''
   })
 
   useEffect(() => {
@@ -55,6 +58,7 @@ const OrderForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
+    setPromoError(false);
 
     const finalGenre = formData.genre === 'other' ? formData.customGenre : formData.genre
     const finalLang = formData.lang === 'Other' ? formData.customLang : formData.lang
@@ -71,6 +75,13 @@ const OrderForm = () => {
       })
 
       const data = await response.json()
+
+      if (response.status === 400 && data.error === 'invalid_promo') {
+          setPromoError(true);
+          setLoading(false);
+          return;
+        }
+
       if (data.url) window.location.href = data.url
       else setLoading(false)
     } catch (error) {
@@ -176,6 +187,23 @@ const OrderForm = () => {
             )}
         </AnimatePresence>
       </section>
+
+      <div className="mt-6">
+        <label className="text-sm font-bold text-gray-700 ml-1 mb-2 flex items-center gap-2">
+            <Link className="w-4 h-4 text-[#D4AF37]" /> {t('reference_label')} 
+            <span className="text-xs font-normal text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">
+                {t('optional')}
+            </span>
+        </label>
+        <input
+            type="text"
+            name="referenceLink"
+            placeholder={t('reference_placeholder')}
+            value={formData.referenceLink}
+            onChange={handleChange}
+            className="w-full px-5 py-3 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-4 focus:ring-[#D4AF37]/10 outline-none transition-all placeholder:text-gray-300"
+        />
+    </div>
 
       <section>
         <div className="grid md:grid-cols-2 gap-6">
@@ -341,6 +369,34 @@ const OrderForm = () => {
             />
         </div>
 
+       <div className="mt-8 mb-6 pt-6 border-t border-gray-100">
+            <label className="text-sm font-bold text-gray-700 ml-1 mb-2 block flex items-center gap-2">
+                <PenLine className="w-4 h-4 text-[#D4AF37]" /> {t('promo_label')}
+            </label>
+            <div className="relative max-w-sm">
+                <input
+                    type="text"
+                    name="promoCode"
+                    placeholder={t('promo_placeholder')}
+                    value={formData.promoCode}
+                    onChange={(e) => setFormData({ ...formData, promoCode: e.target.value.toUpperCase() })}
+                    className={`w-full px-5 py-3 rounded-xl bg-white border border-gray-200 focus:border-[#D4AF37] focus:ring-4 focus:ring-[#D4AF37]/10 outline-none transition-all font-mono tracking-widest ${promoError ? 'border-red-500' : 'border-gray-200'}`}
+                />
+            </div>
+            {promoError ? (
+                <motion.p 
+                    initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                    className="text-red-500 text-xs mt-1 font-bold"
+                >
+                    {t('invalid_promo_error') || 'Invalid promo code'}
+                </motion.p>
+            ) : (
+                <p className="mt-2 ml-1 text-[10px] text-gray-400 font-medium">
+                    {t('promo_applied_hint')}
+                </p>
+            )}
+        </div>
+
         <button
             type="submit"
             disabled={loading || !formData.genre || formData.story.length < 10}
@@ -352,7 +408,7 @@ const OrderForm = () => {
                 </>
             ) : (
                 <>
-                    {t('create_button')} <span className="text-[#D4AF37] font-serif italic font-normal">($49.99)</span>
+                    {t('create_button')}
                 </>
             )}
         </button>

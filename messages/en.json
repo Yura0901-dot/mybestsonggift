@@ -250,6 +250,13 @@
       "secure_badge": "Secure SSL Payment • 100% Money Back Guarantee",
       "lang_other": "Other",
       "lang_other_placeholder": "Type language (max 15 chars)",
+      "promo_label": "Promo Code",
+      "promo_placeholder": "ENTER CODE",
+      "promo_applied_hint": "The discount will be applied at checkout",
+      "invalid_promo_error": "Invalid promo code",
+      "reference_label": "Reference Track / Style",
+      "reference_placeholder": "Paste a YouTube/Spotify link or Artist name",
+      "optional": "optional",
       "genres": {
         "pop": { "label": "Pop / Top 40", "desc": "Catchy & Upbeat" },
         "acoustic": { "label": "Acoustic / Folk", "desc": "Warm & Intimate" },
@@ -258,7 +265,8 @@
         "edm": { "label": "Electronic / Dance", "desc": "Party & Club" },
         "country": { "label": "Country", "desc": "Storytelling" },
         "jazz": { "label": "Jazz / Soul", "desc": "Classy & Smooth" },
-        "cinematic": { "label": "Cinematic", "desc": "Movie Soundtrack" }
+        "cinematic": { "label": "Cinematic", "desc": "Movie Soundtrack" },
+        "house": { "label": "House", "desc": "Groovy & Deep Vibe"}
       }
     },
     "Common": {

@@ -250,6 +250,13 @@
       "secure_badge": "Pago Seguro SSL • Garantía de Devolución 100%",
       "lang_other": "Otro",
       "lang_other_placeholder": "Escriba el idioma (máximo 15 caracteres)",
+      "promo_label": "Código promocional",
+      "promo_placeholder": "INTRODUCE EL CÓDIGO",
+      "promo_applied_hint": "El descuento се aplicará en el momento del pago",
+      "invalid_promo_error": "Código promocional inválido",
+      "reference_label": "Canción de referencia / Estilo",
+      "reference_placeholder": "Pega un enlace de YouTube/Spotify o nombre del artista",
+      "optional": "opcional",
       "genres": {
         "pop": { "label": "Pop / Top 40", "desc": "Pegadizo y Alegre" },
         "acoustic": { "label": "Acústico / Folk", "desc": "Cálido e Íntimo" },
@@ -258,7 +265,8 @@
         "edm": { "label": "Electrónica / Dance", "desc": "Fiesta y Club" },
         "country": { "label": "Country", "desc": "Narrativo" },
         "jazz": { "label": "Jazz / Soul", "desc": "Elegante y Suave" },
-        "cinematic": { "label": "Cinematográfico", "desc": "Banda Sonora de Película" }
+        "cinematic": { "label": "Cinematográfico", "desc": "Banda Sonora de Película" },
+        "house": { "label": "House", "desc": "Ritmo profundo y 'Groovy'" }
       }
     },
     "Common": {

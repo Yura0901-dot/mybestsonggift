@@ -8,6 +8,7 @@ interface AdminEmailProps {
   recipient: string;
   story: string;
   orderId: string;
+  referenceLink: string;
   amount: string;
   lang: string
 }
@@ -21,7 +22,8 @@ export const AdminNewOrderEmail: React.FC<AdminEmailProps> = ({
   story,
   orderId,
   amount,
-  lang
+  lang,
+  referenceLink
 }) => (
   <div style={{ fontFamily: 'Arial, sans-serif', color: '#333', maxWidth: '600px' }}>
     <h1 style={{ color: '#D4AF37' }}>🔥 New Order Received!</h1>
@@ -41,6 +43,7 @@ export const AdminNewOrderEmail: React.FC<AdminEmailProps> = ({
         <li><strong>For:</strong> {recipient}</li>
         <li><strong>Occasion:</strong> {occasion}</li>
          <li><strong>Langueage:</strong> {lang}</li>
+         <li><strong>Refernce:</strong> {referenceLink}</li>
       </ul>
       
       <h4 style={{ marginBottom: '5px' }}>The Story:</h4>
