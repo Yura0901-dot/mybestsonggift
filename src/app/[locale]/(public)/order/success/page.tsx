@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Check, Music, Mail, ArrowRight, FileText } from "lucide-react"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
+import Script from "next/script"
 
 const Success = () => {
   const t = useTranslations('Success')
@@ -28,6 +29,53 @@ const Success = () => {
 
   return (
     <main className="pt-16 pb-24 bg-[#FDFBF7] min-h-screen flex items-center justify-center">
+      <Script id="admitad-success-tracking">
+        {`
+          window.ADMITAD = window.ADMITAD || {};
+          window.ADMITAD.Invoice = window.ADMITAD.Invoice || {};
+
+          var cookie_name = 'deduplication_cookie';
+          var deduplication_cookie_value = 'admitad';
+
+          window.getSourceCookie = function(name) {
+            var matches = document.cookie.match(new RegExp(
+              '(?:^|; )' + name.replace(/([\\.$?*|{}\\(\\)\\[\\]\\\\/\\+^])/g, '\\$1') + '=([^;]*)'
+            ));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+          };
+
+          if (!window.getSourceCookie(cookie_name)) {
+              window.ADMITAD.Invoice.broker = 'na';
+          } else if (window.getSourceCookie(cookie_name) != deduplication_cookie_value) {
+              window.ADMITAD.Invoice.broker = window.getSourceCookie(cookie_name);
+          } else {
+              window.ADMITAD.Invoice.broker = 'adm';
+          };
+
+          window.ADMITAD.Invoice.category = '1';  
+          var orderedItem = []; 
+          
+          orderedItem.push({
+            Product: {
+              productID: '{{product_id}}',
+              category: '1',
+              price: '{{price}}',
+              priceCurrency: '{{currency_code}}', 
+            },
+            orderQuantity: '{{quantity}}',  
+            additionalType: 'sale' 
+          });
+
+          window.ADMITAD.Invoice.referencesOrder = window.ADMITAD.Invoice.referencesOrder || [];
+          
+          window.ADMITAD.Invoice.referencesOrder.push({
+            orderNumber: '{{order number}}',
+            discountCode: '{{promocode}}',   
+            orderedItem: orderedItem
+          });
+        `}
+      </Script>
+
       <div className="container mx-auto px-4 md:px-6 max-w-2xl">
         
         <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-xl border border-[#D4AF37]/10 text-center relative overflow-hidden">
