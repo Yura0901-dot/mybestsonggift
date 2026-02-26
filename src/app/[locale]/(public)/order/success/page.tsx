@@ -73,7 +73,7 @@ const Success = () => {
 
             window.ADMITAD.Invoice.referencesOrder = window.ADMITAD.Invoice.referencesOrder || [];
             window.ADMITAD.Invoice.referencesOrder.push({
-              orderNumber: '${sessionId}',
+              orderNumber: '` + sessionId + `',
               discountCode: '',
               orderedItem: orderedItem
             });
